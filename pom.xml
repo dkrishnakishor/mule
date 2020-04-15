@@ -7,7 +7,7 @@
     OS X Docker for Mac: http://localhost:2376
     To build a Docker image with Mule CE using, for example, the following command:
     mvn dockerfile:build -Pmule-3.8.1
-    Author: Ivan Krizsan
+    Author: KRISHNA DEVARAKONDA
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16,7 +16,7 @@
         http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.1.2</modelVersion>
 
-    <groupId>se.ivankrizsan.docker.mule</groupId>
+    <groupId>dkrishnakishor.docker.mule</groupId>
     <artifactId>mule-docker</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -76,11 +76,11 @@
             <id>mule-4.1.2</id>
             <properties>
                 <!-- Name of Docker image that will be built. -->
-                <docker.image.name>ivankrizsan/mule-docker</docker.image.name>
+                <docker.image.name>dkrishnakishor/mule-docker</docker.image.name>
                 <!-- Tag of Docker image that will be built. -->
-                <docker.image.tag>4.0.0</docker.image.tag>
+                <docker.image.tag>4.1.2</docker.image.tag>
                 <!-- Directory in which the Dockerfile is located. -->
-                <docker.image.src.root>${project.basedir}/mule400</docker.image.src.root>
+                <docker.image.src.root>${project.basedir}/mule4.1.2</docker.image.src.root>
             </properties>
         </profile>
     </profiles>
